@@ -3,7 +3,7 @@
 Layout
 Inspect是一款逆向必备的工具：它可以获取当前活动、快速捕获布局、查看应用运行进程、强制打开Activity、类加载器的枚举、搜索动态加载的类名、注入So文件、自定义Dex脱壳、Asset资源解密、XmI资源解密、移除截屏限制、以及浏览器调试等等
 
-<img src="https://icdn.binmt.cc/2512/693955fbe2827.jpg" alt="">
+<img src="https://i.imgs.ovh/2025/12/10/CnLUhd.jpeg" alt="">
 
 ## 二、如何激活并使用模块？
 
