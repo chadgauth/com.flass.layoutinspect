@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/app_ic_selectable_home" android:id="@id/navigation_home" android:title="主页" />
+    <item android:icon="@drawable/app_ic_selectable_dashboard" android:id="@id/navigation_app" android:title="应用" />
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:menu="@menu/app_fragment_home_menu" app:title="@string/app_name" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:paddingHorizontal="16.0dip">
+            <com.google.android.material.card.MaterialCardView android:id="@id/inactive_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:cardBackgroundColor="?colorError" style="?materialCardViewFilledStyle">
+                <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/app_ic_fill_cancel_24px" app:tint="?colorOnError" />
+                    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip">
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceTitleMedium" android:textColor="?colorOnError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/li_not_activated" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBodyMedium" android:textColor="?colorOnError" android:id="@id/inactive_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/active_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:cardBackgroundColor="?colorPrimary" style="?materialCardViewFilledStyle">
+                <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dip" android:layout_height="24.0dip" app:srcCompat="@drawable/app_ic_fill_check_circle_24px" app:tint="?colorOnPrimary" />
+                    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip">
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceTitleMedium" android:textColor="?colorOnPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/li_activated" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBodyMedium" android:textColor="?colorOnPrimary" android:id="@id/active_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/update_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" style="?materialCardViewFilledStyle">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceTitleMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/li_module_update" />
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBodyMedium" android:id="@id/update_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                    <com.google.android.material.button.MaterialButton android:layout_gravity="end" android:id="@id/update_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/li_update_now" app:icon="@drawable/app_ic_fill_cloud_download_24px" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/about_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceTitleMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/li_about_us" />
+                    <com.google.android.material.button.MaterialButtonGroup android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <com.google.android.material.button.MaterialButton android:id="@id/about_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/li_qq_group" app:icon="@drawable/app_ic_fill_group_24px" style="?materialButtonElevatedStyle" />
+                        <com.google.android.material.button.MaterialButton android:id="@id/about_reward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/li_donate_author" app:icon="@drawable/app_ic_fill_paid_24px" style="?materialButtonElevatedStyle" />
+                    </com.google.android.material.button.MaterialButtonGroup>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@id/thanks_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/thanks_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceTitleMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/li_special_thanks" />
+                        <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBodySmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/li_ranking_note" android:layout_marginStart="4.0dip" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

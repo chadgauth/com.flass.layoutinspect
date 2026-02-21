@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flass.layoutinspect.hook.view.MyLinearLayout android:orientation="vertical" android:background="#a6000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.flass.layoutinspect.hook.view.MyRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.flass.layoutinspect.hook.view.MyTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dump Dex" android:layout_centerInParent="true" />
+        <com.flass.layoutinspect.hook.view.MyImageView android:id="@id/close" android:background="?android:selectableItemBackground" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/module_ic_close_24px" android:tint="@android:color/white" android:layout_alignParentEnd="true" />
+    </com.flass.layoutinspect.hook.view.MyRelativeLayout>
+    <include layout="@layout/module_divider_horizontal" />
+    <com.flass.layoutinspect.hook.view.MyListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="#4dffffff" android:dividerHeight="1.0dip" android:layout_weight="1.0" />
+    <include android:visibility="gone" layout="@layout/module_tip" />
+    <include layout="@layout/module_divider_horizontal" />
+    <com.flass.layoutinspect.hook.view.MyRelativeLayout android:paddingLeft="8.0dip" android:paddingTop="3.0dip" android:paddingRight="8.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="8.0dip" android:paddingVertical="3.0dip">
+        <com.flass.layoutinspect.hook.view.MyCheckBox android:id="@id/option_selectedAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentEnd="true" />
+        <com.flass.layoutinspect.hook.view.MyCheckBox android:id="@id/option_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/li_advanced_settings" />
+    </com.flass.layoutinspect.hook.view.MyRelativeLayout>
+    <include layout="@layout/module_divider_horizontal" />
+    <com.flass.layoutinspect.hook.view.MyButton android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/button" android:background="?android:selectableItemBackground" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@string/li_confirm" android:paddingVertical="10.0dip" />
+</com.flass.layoutinspect.hook.view.MyLinearLayout>

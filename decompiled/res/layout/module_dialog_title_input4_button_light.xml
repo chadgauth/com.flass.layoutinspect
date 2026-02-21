@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flass.layoutinspect.hook.view.MyLinearLayout android:orientation="vertical" android:background="#ccffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.flass.layoutinspect.hook.view.MyRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.flass.layoutinspect.hook.view.MyTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <com.flass.layoutinspect.hook.view.MyImageView android:id="@id/close" android:background="?android:selectableItemBackground" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/module_ic_close_24px" android:tint="@android:color/black" android:layout_alignParentEnd="true" />
+    </com.flass.layoutinspect.hook.view.MyRelativeLayout>
+    <include layout="@layout/module_divider_horizontal_light" />
+    <com.flass.layoutinspect.hook.view.MyScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.flass.layoutinspect.hook.view.MyLinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.flass.layoutinspect.hook.view.MyEditText android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/input1" android:background="#26000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" />
+            <com.flass.layoutinspect.hook.view.MyEditText android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/input2" android:background="#26000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lineSpacingMultiplier="1.2" />
+            <com.flass.layoutinspect.hook.view.MyEditText android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/input3" android:background="#26000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lineSpacingMultiplier="1.2" />
+            <com.flass.layoutinspect.hook.view.MyEditText android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/input4" android:background="#26000000" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lineSpacingMultiplier="1.2" />
+        </com.flass.layoutinspect.hook.view.MyLinearLayout>
+    </com.flass.layoutinspect.hook.view.MyScrollView>
+    <include layout="@layout/module_divider_horizontal_light" />
+    <com.flass.layoutinspect.hook.view.MyButton android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/button" android:background="?android:selectableItemBackground" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@string/li_confirm" android:paddingVertical="10.0dip" />
+</com.flass.layoutinspect.hook.view.MyLinearLayout>

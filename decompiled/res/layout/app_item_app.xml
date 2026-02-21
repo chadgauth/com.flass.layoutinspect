@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" style="?materialCardViewElevatedStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="12.0dip">
+        <com.google.android.material.card.MaterialCardView android:layout_width="40.0dip" android:layout_height="40.0dip" app:cardBackgroundColor="@android:color/transparent" style="?materialCardViewFilledStyle">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.google.android.material.card.MaterialCardView>
+        <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="16.0dip">
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceTitleMedium" android:ellipsize="end" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <com.google.android.material.textview.MaterialTextView android:textAppearance="?textAppearanceBodyMedium" android:ellipsize="middle" android:id="@id/packageName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@id/enabled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

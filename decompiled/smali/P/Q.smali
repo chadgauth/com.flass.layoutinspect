@@ -1,0 +1,131 @@
+.class public final synthetic LP/Q;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
+
+
+# direct methods
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
+    .locals 0
+
+    iput p1, p0, LP/Q;->a:I
+
+    iput-object p2, p0, LP/Q;->b:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(La0/h;Landroid/view/View;)V
+    .locals 0
+
+    const/4 p2, 0x0
+
+    iput p2, p0, LP/Q;->a:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LP/Q;->b:Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 3
+
+    iget v0, p0, LP/Q;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    iget-object v0, p0, LP/Q;->b:Ljava/lang/Object;
+
+    check-cast v0, Ly1/c;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Float;
+
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+
+    move-result p1
+
+    const/high16 v1, 0x437f0000    # 255.0f
+
+    mul-float/2addr v1, p1
+
+    float-to-int v1, v1
+
+    iget-object v2, v0, Ly1/c;->k:Landroid/graphics/drawable/Drawable;
+
+    invoke-virtual {v2, v1}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
+
+    iput p1, v0, Ly1/c;->y:F
+
+    return-void
+
+    :pswitch_0
+    iget-object v0, p0, LP/Q;->b:Ljava/lang/Object;
+
+    check-cast v0, LS1/k;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Float;
+
+    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+
+    move-result p1
+
+    iget-object v0, v0, LS1/r;->d:Lcom/google/android/material/internal/CheckableImageButton;
+
+    invoke-virtual {v0, p1}, Landroid/view/View;->setAlpha(F)V
+
+    return-void
+
+    :pswitch_1
+    iget-object p1, p0, LP/Q;->b:Ljava/lang/Object;
+
+    check-cast p1, La0/h;
+
+    iget-object p1, p1, La0/h;->b:Ljava/lang/Object;
+
+    check-cast p1, Lh/K;
+
+    iget-object p1, p1, Lh/K;->k:Landroidx/appcompat/widget/ActionBarContainer;
+
+    invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/view/View;
+
+    invoke-virtual {p1}, Landroid/view/View;->invalidate()V
+
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method

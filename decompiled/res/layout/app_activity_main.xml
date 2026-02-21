@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/fragment_container_view" android:layout_width="fill_parent" android:layout_height="0.0dip" app:defaultNavHost="true" app:layout_constraintBottom_toTopOf="@id/bottom_navigation_view" app:layout_constraintTop_toTopOf="parent" app:navGraph="@navigation/app_main_navigation" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@id/bottom_navigation_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:labelVisibilityMode="selected" app:layout_constraintBottom_toBottomOf="parent" app:menu="@menu/app_activity_main_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

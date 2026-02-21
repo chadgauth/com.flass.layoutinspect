@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Layout Inspect App Strings - Chinese (Original) -->
+    
+    <!-- Main Menu / Navigation -->
+    <string name="li_current_activity">当前活动</string>
+    <string name="li_capture_layout">捕获布局</string>
+    <string name="li_app_process">应用进程</string>
+    <string name="li_activity_manager">活动管理</string>
+    <string name="li_class_loader">类加载器</string>
+    <string name="li_search_class">搜索类名</string>
+    <string name="li_remove_security">移除安全限制</string>
+    <string name="li_debug_browser">调试浏览器</string>
+    
+    <!-- Dialogs / Buttons -->
+    <string name="li_confirm">确定</string>
+    <string name="li_search">搜索</string>
+    <string name="li_previous">上一个</string>
+    <string name="li_next">下一个</string>
+    <string name="li_update_now">立即更新</string>
+    <string name="li_hide_floating">隐藏悬浮窗</string>
+    
+    <!-- Status -->
+    <string name="li_activated">已激活</string>
+    <string name="li_not_activated">未激活</string>
+    <string name="li_empty">空空如也</string>
+    
+    <!-- Process -->
+    <string name="li_current_process">当前进程</string>
+    <string name="li_more_processes">更多进程</string>
+    
+    <!-- Settings / Advanced -->
+    <string name="li_advanced_settings">高级设定</string>
+    <string name="li_precise_control">精准控制</string>
+    <string name="li_output_content">输出内容</string>
+    <string name="li_output_below">输出到下方</string>
+    <string name="li_output_to_file">输出到文件</string>
+    <string name="li_load_class_active">主动加载类</string>
+    <string name="li_r8_basic_syntax">R8基础语法</string>
+    <string name="li_regex">正则表达式</string>
+    
+    <!-- Class Inspector -->
+    <string name="li_overview">概览</string>
+    <string name="li_parent_class">父类</string>
+    <string name="li_interfaces">接口</string>
+    <string name="li_inner_classes">内部类</string>
+    <string name="li_fields">字段</string>
+    <string name="li_constructors">构造</string>
+    <string name="li_methods">方法</string>
+    <string name="li_call_stack">调用堆栈</string>
+    
+    <!-- Target -->
+    <string name="li_target_object">目标对象</string>
+    <string name="li_target_view">目标控件</string>
+    <string name="li_view_to_image">控件转图片</string>
+    <string name="li_remove_view">移除控件</string>
+    
+    <!-- About -->
+    <string name="li_about_us">关于我们</string>
+    <string name="li_special_thanks">特别鸣谢</string>
+    <string name="li_ranking_note">(排名不分前后)</string>
+    <string name="li_donate_author">赞赏作者</string>
+    <string name="li_module_update">模块更新</string>
+    <string name="li_qq_group">QQ群</string>
+</resources>

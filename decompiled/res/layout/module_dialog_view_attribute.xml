@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flass.layoutinspect.hook.view.MyLinearLayout android:orientation="vertical" android:background="#a6000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.flass.layoutinspect.hook.view.MyRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.flass.layoutinspect.hook.view.MyTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/li_target_view" android:layout_centerInParent="true" />
+        <com.flass.layoutinspect.hook.view.MyImageView android:id="@id/close" android:background="?android:selectableItemBackground" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/module_ic_close_24px" android:tint="@android:color/white" android:layout_alignParentEnd="true" />
+    </com.flass.layoutinspect.hook.view.MyRelativeLayout>
+    <include layout="@layout/module_divider_horizontal" />
+    <com.flass.layoutinspect.hook.view.MyScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.flass.layoutinspect.hook.view.MyLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.flass.layoutinspect.hook.view.MyLinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.flass.layoutinspect.hook.view.MyLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.flass.layoutinspect.hook.view.MyButton android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/view_remove" android:background="?android:selectableItemBackground" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@string/li_remove_view" android:layout_weight="1.0" android:paddingVertical="10.0dip" />
+                <include layout="@layout/module_divider_vertical" />
+                <com.flass.layoutinspect.hook.view.MyButton android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/view_visibility" android:background="?android:selectableItemBackground" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="0.0dip" android:layout_weight="1.0" android:paddingVertical="10.0dip" />
+            </com.flass.layoutinspect.hook.view.MyLinearLayout>
+            <include layout="@layout/module_divider_horizontal" />
+            <com.flass.layoutinspect.hook.view.MyButton android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/view_toImage" android:background="?android:selectableItemBackground" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@string/li_view_to_image" android:paddingVertical="10.0dip" />
+            <include layout="@layout/module_divider_horizontal" />
+            <com.flass.layoutinspect.hook.view.MyButton android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/view_stackTrace" android:background="?android:selectableItemBackground" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="0.0dip" android:text="@string/li_call_stack" android:paddingVertical="10.0dip" />
+        </com.flass.layoutinspect.hook.view.MyLinearLayout>
+    </com.flass.layoutinspect.hook.view.MyScrollView>
+</com.flass.layoutinspect.hook.view.MyLinearLayout>
